@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- 以下都是不能相互嵌套的例子，代码虽然不会报错，但是浏览器会自动将代码规范，达不到我们想搞怪的效果，效果如图，当然自己写代码的时候不要这么做 -->
+
+    <!-- 
+        p 和 h 标签不能相互嵌套
+    -->
+    <p>
+    <h1>一级标题</h1>
+    </p>
+
+    <!-- 
+        p 里面不能包含 div
+    -->
+    <p>
+    <div>div</div>
+    </p>
+
+    <!-- 
+        a 里面可以嵌套任意元素，但是不能套自己
+    -->
+    <a href="#"><a href="#">123</a></a>
+
+</body>
+
+</html>

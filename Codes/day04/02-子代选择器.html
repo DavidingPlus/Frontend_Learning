@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 空格隔开的是后代选择器，会将 div 后代中的所有 a 全部选中 */
+        /* div a {
+            color: red;
+        } */
+
+        /* 子代选择器 */
+        /* 父亲 > 儿子 */
+        div>a {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        父级
+        <a href="#">这是 div 里面的 a</a>
+        <p>
+            <a href="#">这是 div 里面的 p 里面的 a</a>
+        </p>
+    </div>
+
+</body>
+
+</html>

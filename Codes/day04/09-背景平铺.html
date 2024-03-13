@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 500px;
+            height: 400px;
+            background-color: pink;
+            background-image: url("./images/1.jpg");
+            /* 默认情况下背景图片会按照标签的 x 和 y 方向进行平铺，在上面的效果就是盒子里有 4 张图片 */
+            /* 使用 background-repeat 进行设置，如果无法整除则只会平铺图片的一部分出来 */
+            /*  | `repeat`    | 背景图像在纵向和横向上平铺（默认的）    |
+                | `no-repeat` | 背景图像不平铺                      |
+                | `repeat-x`  | 背景图像在横向上平铺                 |
+                | `repeat-y`  | 背景图像在纵向上平铺                 | 
+            */
+            background-repeat: repeat-x;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div>文字</div>
+
+</body>
+
+</html>

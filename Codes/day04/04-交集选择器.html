@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 必须是 p 标签，并且添加了 box 类 */
+        /* 交集选择器， p 和 .box 之间什么也不加，其他的也同理 */
+        p.box {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 找到 p 并且带 box 类的，设置文字颜色为红色 -->
+    <p class="box">这是 p 标签： box</p>
+    <p>ppppp</p>
+    <div class="box">这是 div 标签： box</div>
+
+</body>
+
+</html>

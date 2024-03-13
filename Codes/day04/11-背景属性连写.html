@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            /* 与 font 属性不同， background 没有特定的书写顺序，下面是一般约定俗成的书写顺序 */
+            /* `background`: `背景颜色` `背景图片地址` `背景平铺` `背景图片位置` */
+            /* 这里有一个细节，按理来说图片位置前面是 x ,后面是 y，但是 top bottom 是 y 方向特有，left right是 x 方向特有，因此浏览器识别到这些的时候会自动归为对应的方向，所以即使我写 bottom left，这个 left 也是应用在 x 方向 */
+            /* bottom 和 具体的数字结合的时候可能会出一定问题，所以综上所述，还是按照既定的顺序来！！！ */
+            background: pink url("./images/1.jpg") no-repeat bottom left;
+            width: 400px;
+            height: 400px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>标签</div>
+
+</body>
+
+</html>
