@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            /* font-style: ;
+            font-weight: ;
+            font-size: ;
+            font-family: ; */
+            /* font: <font-style> <font-weight> <font-size> <font-family> ; */
+            font: italic bold 30px 楷体;
+            /* 因为层叠性，现在的字体是不倾斜的 */
+            font-style: normal;
+
+            /* 一个属性冒号后书写多个值的写法 -- 复合属性 */
+        }
+
+        div {
+            /* 规定可以省略前两个属性，并使用它们的默认值 */
+            font: 100px 宋体;
+        }
+    </style>
+</head>
+
+<body>
+    <p>这是 p 标签</p>
+    <div>这是 div 标签</div>
+</body>
+
+</html>
