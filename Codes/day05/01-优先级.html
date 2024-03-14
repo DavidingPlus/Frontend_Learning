@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 优先级：一个标签使用了多个选择器，样式冲突的时候，到底谁生效 */
+        /* 选择器选中的范围越小，越精确，优先级越高！！ */
+        #box {
+            color: orange
+        }
+
+        .box {
+            color: blue;
+        }
+
+        div {
+            color: green !important;
+        }
+
+        /* !important 不要给继承添加，自己有样式，无法继承父级样式 */
+        body {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box" id="box" style="color: pink;">测试优先级</div>
+
+</body>
+
+</html>
