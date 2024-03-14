@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            /* width 和 height 的大小是指内容 content 的大小，因此设置 padding 内边距， border 边框 都会把盒子撑大 ！！！ */
+            /* margin 外边距不会，因为外边距不属于盒子的范围 */
+            width: 300px;
+            height: 300px;
+            background-color: pink;
+            padding: 50px;
+
+            /* padding 可以当作复合属性使用，表示单独设置某个方向的内边距 */
+            /* 上 右 下 左 （顺时针） */
+            padding: 10px 20px 80px 40px;
+
+
+            /* 如何记忆？始终记得顺序是从上开始，顺时针，如果遇到少于 4 个的，也从上开始顺时针走，没有的就看对面的，可以看下面的规则测试 */
+            /* 
+            | 值的个数                       | 表达意思                                                       |
+            | ------------------------------ | ------------------------------------------------------------ |
+            | `padding: 5px;`                | 1 个值，代表上下左右都有 5 像素内边距                           |
+            | `padding: 5px 10px;`           | 2 个值，代表上下内边距是 5 像素，左右内边距是 10 像素            |
+            | `padding: 5px 10px 20px;`      | 3 个值，代码上内边距 5 像素，左右内边距 10 像素，下内边距 20 像素 |
+            | `padding: 5px 10px 20px 30px;` | 4 个值，上是 5 像素，右 10 像素，下 20 像素，左是 30 像素（顺时针） | 
+            */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>盒子</div>
+
+</body>
+
+</html>
