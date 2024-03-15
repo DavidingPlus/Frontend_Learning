@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .father {
+            width: 300px;
+            height: 300px;
+            background-color: pink;
+        }
+
+        /* 伪标签： 默认是行内元素，所以直接修改 width 和 height 不生效 */
+        /* 在父元素的最前面加伪标签 */
+        .father::before {
+            /* 标签内容，必须有这个属性才能显示出来（很好理解），没有文字内容引号里面为空都可以，但是这个属性必须写出来 */
+            /* 中文字需要加上引号 */
+            content: "老鼠";
+            color: green;
+        }
+
+
+        /* 在父元素的最后面加伪标签 */
+        .father::after {
+            content: "大米";
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 伪元素，通过 css 创建标签，装饰性的，不重要的小图就可以这么干 -->
+    <!-- 找父类，在父类中创建子级标签 -->
+
+    <div class="father">爱</div>
+
+</body>
+
+</html>

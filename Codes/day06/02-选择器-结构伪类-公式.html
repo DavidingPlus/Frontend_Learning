@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 结构伪类当中可以填入公式， n 的范围是 0, 1, 2, 3, 4 ... */
+        /* 计算出的结果为正即是选中的标签，例如下面选中的就是所有偶数 */
+        li:nth-child(2n) {
+            background-color: red;
+        }
+
+        /* 第一个到第五个 */
+        li:nth-child(-n+5) {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul>
+        <li>这是第 1 个 li</li>
+        <li>这是第 2 个 li</li>
+        <li>这是第 3 个 li</li>
+        <li>这是第 4 个 li</li>
+        <li>这是第 5 个 li</li>
+        <li>这是第 6 个 li</li>
+        <li>这是第 7 个 li</li>
+        <li>这是第 8 个 li</li>
+    </ul>
+
+</body>
+
+</html>

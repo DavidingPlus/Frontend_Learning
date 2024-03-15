@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 因为下面的很多 li 是 ul 的 child ，因此前面的语法注意是 li ，表示选中孩子中的第几个孩子 */
+        /* 选中 li 当中 的第 1 个 child */
+        li:first-child {
+            background-color: green;
+        }
+
+        /* 最后一个 */
+        li:last-child {
+            background-color: pink;
+        }
+
+        /* 正数第 x 个，下标从 1 开始 */
+        li:nth-child(2) {
+            background-color: grey;
+        }
+
+        /* 倒数第 x 个 */
+        li:nth-last-child(3) {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ul>li{这是第 $ 个 li}*8 -->
+    <ul>
+        <li>这是第 1 个 li</li>
+        <li>这是第 2 个 li</li>
+        <li>这是第 3 个 li</li>
+        <li>这是第 4 个 li</li>
+        <li>这是第 5 个 li</li>
+        <li>这是第 6 个 li</li>
+        <li>这是第 7 个 li</li>
+        <li>这是第 8 个 li</li>
+    </ul>
+
+</body>
+
+</html>
