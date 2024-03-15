@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span {
+            /* 如果想通过 margin 或者 padding 改变行内标签的垂直位置，无法生效
+               行内标签的 margin-top, margin-bottom, padding-top, padding-bottom 无法生效 */
+            /* 解决方法：设置行高 */
+            line-height: 100px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- 行内元素 内外边距 margin padding -->
+    <span>span</span>
+    <span>span</span>
+
+</body>
+
+</html>
